@@ -32,6 +32,7 @@ jobs:
         uses: flipperdevices/flipperzero-ufbt-action@v0.1
         id: build-app
         with:
+          app-dir: ./chaos_relay
           sdk-channel: ${{ matrix.sdk-channel }}
       - name: Upload app artifacts
         uses: actions/upload-artifact@v4
