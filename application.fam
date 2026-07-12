@@ -1,0 +1,15 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="chaos_relay",  # Must be unique
+    name="CHAOS Relay",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="chaos_relay_app",
+    stack_size=2 * 1024,
+    fap_category="GPIO",
+    fap_version="0.1",
+    fap_icon="chaos_relay.png",  # 10x10 1-bit PNG
+    fap_description="Shows the latest status jessy pushes over USB serial.",
+    fap_author="chaos project",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
