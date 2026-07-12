@@ -7,10 +7,10 @@ Custom apps for Flipper Zero, built with [`ufbt`](https://github.com/flipperdevi
 ### `chaos_relay`
 
 Displays the latest status line pushed over USB serial from
-[jessy's `chaos` app](https://github.com/Breaux-cpu/chaos) — QR/barcode
-scans, pentest job results (nmap/nikto/gobuster/sqlmap/hydra/tcpdump). First
-working piece of a two-track build: jessy is the AI/vision brain, this
-Flipper is the hands and the display.
+[`chaos`](https://github.com/Breaux-cpu/chaos), running on an Arduino UNO Q —
+QR/barcode scans, pentest job results (nmap/nikto/gobuster/sqlmap/hydra/
+tcpdump). First working piece of a two-track build: the Arduino UNO Q is the
+AI/vision brain, this Flipper is the hands and the display.
 
 ```bash
 cd chaos_relay

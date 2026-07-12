@@ -1,7 +1,7 @@
-/* CHAOS relay — displays the latest status line jessy writes to
+/* CHAOS relay — displays the latest status line the Arduino UNO Q writes to
  * /ext/apps_data/chaos_relay/status.txt over the existing USB-serial link
  * (flipper-tool.py push). First Track A app: proves the ufbt build/flash
- * pipeline and the jessy -> Flipper bridge before any bigger firmware work.
+ * pipeline and the UNO Q -> Flipper bridge before any bigger firmware work.
  */
 #include <furi.h>
 #include <gui/gui.h>
@@ -54,7 +54,7 @@ static void chaos_relay_draw_callback(Canvas* canvas, void* context) {
 
     canvas_set_font(canvas, FontSecondary);
     furi_mutex_acquire(model->mutex, FuriWaitForever);
-    canvas_draw_str(canvas, 2, 24, model->status_loaded ? model->status : "Waiting for jessy...");
+    canvas_draw_str(canvas, 2, 24, model->status_loaded ? model->status : "Waiting for UNO Q...");
     furi_mutex_release(model->mutex);
 
     canvas_draw_str(canvas, 2, 60, "Back: exit");
